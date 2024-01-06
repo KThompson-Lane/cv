@@ -1,278 +1,119 @@
 import {
-  AmbitLogo,
-  BarepapersLogo,
-  BimLogo,
-  CDGOLogo,
-  ClevertechLogo,
-  ConsultlyLogo,
-  EvercastLogo,
-  Howdy,
-  JarockiMeLogo,
-  JojoMobileLogo,
-  Minimal,
-  MobileVikingsLogo,
-  MonitoLogo,
-  NSNLogo,
-  ParabolLogo,
-  TastyCloudLogo,
-  YearProgressLogo,
+  UnityLogo,
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
+  name: "Kiall Thompson-Lane",
+  initials: "KT-L",
+  location: "Brighton, United Kingdom, GMT",
+  locationLink: "https://www.google.com/maps/place/Brighton",
   about:
-    "Full Stack Engineer focused on building products with extra attention to detail",
+    "Highly-driven software engineer with experience in both front and back-end development",
   summary:
-    "As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1. I lead teams effectively, ensuring an environment where people can do their best work. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience in working remotely with companies all around the world.",
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+    "In my time as a software engineer,  I have been motivated to develop both my technical skills and interpersonal skills to increase my value as a team member. I have challenged myself to explore unfamiliar areas, allowing me to gain experience with concepts including CI/CD, API development and web-hosting. I am looking for a role where I can further challenge myself and deliver solutions to interesting problems.",
+  avatarUrl: "https://avatars.githubusercontent.com/u/57400783?v=4",
+  personalWebsiteUrl: "https://temporary.url",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "kialltlane1908@gmail.com",
+    tel: "+447821327235",
+    github: "https://github.com/KThompson-Lane",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/KThompson-Lane",
         icon: GitHubIcon,
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/kiall-thompson-lane/",
         icon: LinkedInIcon,
-      },
-      {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: XIcon,
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "University of East Anglia",
+      degree: "BSc Degree in Computing Sciences",
+      start: "2019",
+      end: "2023",
+      grade: "First class (82% weighted grade average)",
+      relevantModules: ["3D Graphics", "Advanced Programming", "Networks", "Games Development"],
+      awards: ["BCS Prize for best individual performance by a BSc computing student", "Prize for distinguished performance in the final year assessment in all first degree and MComp programs"]
     },
   ],
   work: [
     {
-      company: "Parabol",
-      link: "https://parabol.co",
+      company: "Unity Technologies",
+      link: "https://unity.com/",
+      badges: ["Hybrid Working"],
+      title: "Software Engineer",
+      logo: UnityLogo,
+      start: "2023",
+      end: "Present",
+      description:
+        "Worked to create tools, used throughout the company, to improve and maintain product quality. Using experience gained in front and back-end development including CI/CD best practices. Contributed to open source projects such as Discourse, adding features necessary for internal development.",
+    },
+    {
+      company: "Unity Technologies",
+      link: "https://unity.com/",
       badges: ["Remote"],
-      title: "Senior Full Stack Developer",
-      logo: ParabolLogo,
+      title: "Software Engineering Intern",
+      logo: UnityLogo,
       start: "2021",
-      end: "2024",
+      end: "2022",
       description:
-        "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
-    },
-    {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote"],
-      title: "Lead Android Developer → Full Stack Developer",
-      logo: ClevertechLogo,
-      start: "2015",
-      end: "2021",
-      description:
-        "Created Android mobile apps and led teams for companies like Vision Media, DKMS, or AAA. Built live streaming application for Evercast from scratch. Technologies: Android, Kotlin, React, TypeScript, GraphQL",
-    },
-    {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: [],
-      title: "Android Developer → Lead Android Developer",
-      logo: JojoMobileLogo,
-      start: "2012",
-      end: "2015",
-      description:
-        "Built an Android team, created Android apps for biggest Polish companies like LOT, Polskie Radio, Agora, PolskaPress",
-    },
-    {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: [],
-      title: "C/C++ Developer",
-      logo: NSNLogo,
-      start: "2010",
-      end: "2012",
-      description: "Creating and testing software for LTE base stations",
+        "Independently led a project to create a Blazor-based web application which integrated with an existing API, gaining CI/CD knowledge with Docker and GitHub Actions as well as interpersonal skills through liaising with colleagues outside my immediate team to deliver a project which met their requirements.",
     },
   ],
   skills: [
-    "JavaScript",
-    "TypeScript",
-    "React/Next.js/Remix",
-    "Node.js",
-    "GraphQL",
-    "Relay",
-    "WebRTC",
+    "C#",
+    "ASP.NET",
+    "Blazor",
+    "RESTful API",
+    "Nginx",
+    "GitHub Actions",
+    "Kubernetes",
   ],
   projects: [
     {
-      title: "Consultly",
+      title: "C_Flat",
       techStack: [
-        "Side Project",
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
+        "C#",
+        "WPF",
+        "NUnit",
       ],
-      description: "A platform to build and grow your online business",
-      logo: ConsultlyLogo,
+      description: "A simple C-style GPL with a C# trans-compiler and WPF GUI",
       link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
+        label: "GitHub Repository",
+        href: "https://github.com/UEA-advanced-programmers/C_Flat/tree/main",
       },
     },
     {
-      title: "Monito",
-      techStack: ["Side Project", "TypeScript", "Next.js", "Browser Extension"],
-      description:
-        "Browser extension that records everything happening in a web application",
-      logo: MonitoLogo,
-      link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
-      },
-    },
-    {
-      title: "Jarocki.me",
-      techStack: ["Side Project", "Next.js", "MDX"],
-      description:
-        "My personal website and blog. Built with Next.js and Notion API",
-      logo: JarockiMeLogo,
-      link: {
-        label: "github.com",
-        href: "https://jarocki.me/",
-      },
-    },
-    {
-      title: "Minimal",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Minimalist calendars, habit trackers and planners generator",
-      logo: Minimal,
-      link: {
-        label: "useminimal.com",
-        href: "https://useminimal.com/",
-      },
-    },
-    {
-      title: "Barepapers",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Generates beautiful wallpapers using random shapes and gradients",
-      logo: BarepapersLogo,
-      link: {
-        label: "barepapers.com",
-        href: "https://barepapers.com/",
-      },
-    },
-    {
-      title: "Year progress",
-      techStack: ["Side Project", "TypeScript", "Next.js"],
-      description: "Tracks current year progress and displays a countdown",
-      logo: YearProgressLogo,
-      link: {
-        label: "getyearprogress.com",
-        href: "https://getyearprogress.com/",
-      },
-    },
-    {
-      title: "Parabol",
+      title: "Resumable Uploader",
       techStack: [
-        "Full Stack Developer",
-        "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
+        "C#",
+        "Avalonia",
+        "ASP.Net",
       ],
-      description:
-        "The Agile meeting co-pilot that delivers better meetings with less effort",
-      logo: ParabolLogo,
+      description: "A web api which allows a client to upload files incrementally, created as proof of concept work",
       link: {
-        label: "github.com",
-        href: "https://parabol.co/",
+        label: "GitHub Repository",
+        href: "https://github.com/KThompson-Lane/ResumableUploader/tree/main",
       },
     },
     {
-      title: "Evercast",
+      title: "IK Procedural Animation",
       techStack: [
-        "Lead Frontend Developer",
-
-        "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
+        "C#",
+        "Unity",
+        "Dissertation project"
       ],
-      description:
-        "Creative collaboration platform that combines video conferencing and HD media streaming",
-      logo: EvercastLogo,
+      description: "A Unity project demonstrating the use of IK to procedurally animate a 3D creature",
       link: {
-        label: "evercast.us",
-        href: "https://www.evercast.us/",
+        label: "GitHub Repository",
+        href: "https://github.com/KThompson-Lane/IK-Procedural-Animation/tree/main",
       },
-    },
-    {
-      title: "Mobile Vikings",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application for leading virtual mobile operator in Poland",
-      logo: MobileVikingsLogo,
-      link: {
-        label: "mobilevikings.pl",
-        href: "https://mobilevikings.pl/",
-      },
-    },
-    {
-      title: "Howdy",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Howdy is a place for you to join communities you care about",
-      logo: Howdy,
-      link: {
-        label: "play.google.com",
-        href: "https://howdy.co/",
-      },
-    },
-    {
-      title: "Tastycloud",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application for managing and displaying restaurant menus in kiosk mode",
-      logo: TastyCloudLogo,
-      link: {
-        label: "tastycloud.fr",
-        href: "https://www.tastycloud.fr/",
-      },
-    },
-    {
-      title: "Ambit",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with sharing your contact details",
-      logo: AmbitLogo,
-    },
-    {
-      title: "Bim",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with booking a table in a restaurants",
-      logo: BimLogo,
-    },
-    {
-      title: "Canal Digital GO",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Video streaming mobile application for Canal Digital subscribers",
-      logo: CDGOLogo,
-    },
+  },
   ],
 } as const;

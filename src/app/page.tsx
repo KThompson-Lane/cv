@@ -74,6 +74,11 @@ export default function Page() {
               ))}
             </div>
             <div className="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex">
+              {RESUME_DATA.contact.github ? (
+                <a href={`tel:${RESUME_DATA.contact.github}`}>
+                  <span className="underline">{RESUME_DATA.contact.github}</span>
+                </a>
+              ) : null}
               {RESUME_DATA.contact.email ? (
                 <a href={`mailto:${RESUME_DATA.contact.email}`}>
                   <span className="underline">{RESUME_DATA.contact.email}</span>
@@ -153,7 +158,39 @@ export default function Page() {
                     </div>
                   </div>
                 </CardHeader>
-                <CardContent className="mt-2">{education.degree}</CardContent>
+                <CardContent className="mt-2">
+                  <Card key={education.grade}>
+                    <CardHeader>
+                      <div className="flex items-center justify-between gap-x-2 text-base">
+                      <h3 className="font-semibold leading-none">
+                        {education.degree}
+                      </h3>
+                      <div className="text-sm tabular-nums text-gray-500">
+                        {education.grade}
+                      </div>
+                    </div>
+                    </CardHeader>
+                    <CardContent className="mt-2">
+                      <div>
+                        {education.awards.map((award) => {
+                          return <li>{award}</li>
+                        })}
+                      </div>
+                      <span className="inline-flex gap-x-1 mt-2">
+                        {education.relevantModules.map((module) => (
+                          <Badge
+                            variant="secondary"
+                            className="align-middle text-xs"
+                            key={module}
+                          >
+                            {module}
+                          </Badge>
+                        ))}
+                      </span>
+                    </CardContent>
+                  </Card>
+                 
+                </CardContent>
               </Card>
             );
           })}
@@ -167,7 +204,7 @@ export default function Page() {
           </div>
         </Section>
 
-        <Section className="print-force-new-page scroll-mb-16">
+        <Section className="scroll-mb-16">
           <h2 className="text-xl font-bold">Projects</h2>
           <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
             {RESUME_DATA.projects.map((project) => {
