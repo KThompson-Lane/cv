@@ -140,7 +140,7 @@ export default function Page() {
                   {/* {work.description} */}
                   <div>
                     {work.highlights.map((highlight => {
-                      return <li>{highlight}</li>
+                      return <li key={highlight}>{highlight}</li>
                     }))}
                   </div>
                 </CardContent>
@@ -178,7 +178,7 @@ export default function Page() {
                     <CardContent className="mt-2">
                       <div>
                         {education.awards.map((award) => {
-                          return <li>{award}</li>
+                          return <li key={award}>{award}</li>
                         })}
                       </div>
                       <span className="inline-flex gap-x-1 mt-2">
