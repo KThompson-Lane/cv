@@ -49,10 +49,21 @@ export const RESUME_DATA = {
       badges: ["Hybrid Working"],
       title: "Software Engineer",
       logo: UnityLogo,
-      start: "2023",
+      start: "July 2023",
       end: "Present",
       description:
-        "Worked to create tools, used throughout the company, to improve and maintain product quality. Using experience gained in front and back-end development including CI/CD best practices. Contributed to open source projects such as Discourse, adding features necessary for internal development.",
+        "Worked on projects including desktop/web applications and API development which were used throughout the company, to improve and maintain product quality. Using experience gained in front and back-end development including CI/CD best practices. Contributed to open source projects such as Discourse, adding features necessary for internal development.",
+      highlights: [
+        "Self-driven research and accompanying documentation on future work",
+        "Presenting prior investigative tasks to peers and driving for alignment on the best way forward",
+        "Proactively tackling tech debt including adding better health-checks and service monitoring",
+        "Contributed to open source projects such as Discourse, adding internally desired features",
+        "Adapted quickly, gaining whatever knowledge needed for the task e.g. Redis, Ruby, GoLang",
+        "Successfully delivered applications to internal stakeholders, meeting deadlines and user stories",
+        "Maintaining and improving customer-facing products, using frameworks like ASP.NET, Blazor and Ruby",
+        "Leading proof-of-concept work for a major upcoming project, including the use of Avalonia UI",
+        "Expanded upon CI/CD knowledge gained in internship role to improve internal processes"
+      ],
     },
     {
       company: "Unity Technologies",
@@ -60,20 +71,36 @@ export const RESUME_DATA = {
       badges: ["Remote"],
       title: "Software Engineering Intern",
       logo: UnityLogo,
-      start: "2021",
-      end: "2022",
+      start: "July 2021",
+      end: "June 2022",
       description:
-        "Independently led a project to create a Blazor-based web application which integrated with an existing API, gaining CI/CD knowledge with Docker and GitHub Actions as well as interpersonal skills through liaising with colleagues outside my immediate team to deliver a project which met their requirements.",
+        "Led a project to create a Blazor-based web application which integrated with an existing API, gaining CI/CD knowledge with Docker and GitHub Actions as well as interpersonal skills through liaising with colleagues outside my immediate team to deliver a project which met their requirements.",
+      highlights: [
+        "Led a project which required liaising with colleagues outside of my team to meet requirements",
+        "Gained knowledge with concepts including CI/CD, Docker, GitHub Actions etc",
+        "Improved interpersonal skills and self-confidence by working as part of a supportive team",
+        "Learnt how to follow and uphold rigorous code standards",
+        "Undertook additional training including leadership workshops to strengthen collaborative skills",
+        "Working flexibly, regularly context switching onto different projects with different tech stacks",
+      ],
     },
   ],
   skills: [
     "C#",
+    "C++",
     "ASP.NET",
     "Blazor",
     "RESTful API",
     "Nginx",
     "GitHub Actions",
     "Kubernetes",
+    "JavaScript",
+    "TypeScript",
+    "Docker",
+    "CI/CD",
+    "SQL",
+    "Avalonia UI",
+    "Pub/Sub queues"
   ],
   projects: [
     {
@@ -115,5 +142,18 @@ export const RESUME_DATA = {
         href: "https://github.com/KThompson-Lane/IK-Procedural-Animation/tree/main",
       },
   },
+  {
+    title: "Project HTM",
+    techStack: [
+      "C#",
+      "Unity",
+      "2D roguelike game"
+    ],
+    description: "A 2D topdown roguelike with procedurally generated levels built in Unity",
+    link: {
+      label: "GitHub Repository",
+      href: "https://github.com/KThompson-Lane/project-htm",
+      },
+    },
   ],
 } as const;

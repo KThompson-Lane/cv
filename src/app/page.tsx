@@ -75,7 +75,7 @@ export default function Page() {
             </div>
             <div className="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex">
               {RESUME_DATA.contact.github ? (
-                <a href={`tel:${RESUME_DATA.contact.github}`}>
+                <a href={RESUME_DATA.contact.github}>
                   <span className="underline">{RESUME_DATA.contact.github}</span>
                 </a>
               ) : null}
@@ -92,10 +92,10 @@ export default function Page() {
             </div>
           </div>
 
-          <Avatar className="size-28">
+          {/* <Avatar className="size-28">
             <AvatarImage alt={RESUME_DATA.name} src={RESUME_DATA.avatarUrl} />
             <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
-          </Avatar>
+          </Avatar> */}
         </div>
         <Section>
           <h2 className="text-xl font-bold">About</h2>
@@ -137,7 +137,12 @@ export default function Page() {
                   </h4>
                 </CardHeader>
                 <CardContent className="mt-2 text-xs">
-                  {work.description}
+                  {/* {work.description} */}
+                  <div>
+                    {work.highlights.map((highlight => {
+                      return <li>{highlight}</li>
+                    }))}
+                  </div>
                 </CardContent>
               </Card>
             );
@@ -204,7 +209,7 @@ export default function Page() {
           </div>
         </Section>
 
-        <Section className="scroll-mb-16">
+        <Section className="print-force-new-page scroll-mb-16">
           <h2 className="text-xl font-bold">Projects</h2>
           <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
             {RESUME_DATA.projects.map((project) => {
