@@ -7,7 +7,7 @@ import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 export const RESUME_DATA = {
   name: "Kiall Thompson-Lane",
   initials: "KT-L",
-  location: "Brighton, United Kingdom, GMT",
+  location: "Brighton, United Kingdom",
   locationLink: "https://www.google.com/maps/place/Brighton",
   about:
     "Highly-driven software engineer with experience in both front and back-end development",
@@ -54,6 +54,9 @@ export const RESUME_DATA = {
       end: "Present",
       description:
         "Working on a large codebase with a mixture of frameworks including VB.NET, .NET Core, Angular and EF core to deliver features with customer driven requirements and deadlines.",
+      highlights: [
+        "Working on a large codebase with a mixture of frameworks including VB.NET, .NET Core, Angular and EF core to deliver features with customer driven requirements and deadlines.",
+      ]
     },
     {
       company: "Unity Technologies",
@@ -66,15 +69,14 @@ export const RESUME_DATA = {
       description:
         "Worked on projects including desktop/web applications and API development which were used throughout the company, to improve and maintain product quality. Using experience gained in front and back-end development including CI/CD best practices. Contributed to open source projects such as Discourse, adding features necessary for internal development.",
       highlights: [
-        "Self-driven research and accompanying documentation on future work",
-        "Presenting prior investigative tasks to peers and driving for alignment on the best way forward",
-        "Proactively tackling tech debt including adding better health-checks and service monitoring",
-        "Contributed to open source projects such as Discourse, adding internally desired features",
-        "Adapted quickly, gaining whatever knowledge needed for the task e.g. Redis, Ruby, GoLang",
-        "Successfully delivered applications to internal stakeholders, meeting deadlines and user stories",
+        "Expanded upon CI/CD knowledge gained in internship role to improve internal processes",
         "Maintaining and improving customer-facing products, using frameworks like ASP.NET, Blazor and Ruby",
+        "Adapted quickly, gaining whatever knowledge needed for the task e.g. Redis, Ruby, GoLang",
+        "Proactively tackling tech debt including adding better health-checks and service monitoring",
+        "Self-driven research, presenting outcomes to peeers to decide on future work",
+        "Contributed to open source projects such as Discourse, adding internally required features",
+        "Successfully delivered applications to internal stakeholders, meeting deadlines and user stories",
         "Leading proof-of-concept work for a major upcoming project, including the use of Avalonia UI",
-        "Expanded upon CI/CD knowledge gained in internship role to improve internal processes"
       ],
     },
     {
@@ -102,7 +104,7 @@ export const RESUME_DATA = {
     "C++",
     "ASP.NET",
     "Blazor",
-    "RESTful API",
+    "RESTful API's",
     "Nginx",
     "GitHub Actions",
     "Kubernetes",
@@ -111,7 +113,6 @@ export const RESUME_DATA = {
     "Docker",
     "CI/CD",
     "SQL",
-    "Avalonia UI",
     "Pub/Sub queues"
   ],
   projects: [
