@@ -1,5 +1,6 @@
 import {
   UnityLogo,
+  VirtusalesLogo
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
@@ -44,13 +45,24 @@ export const RESUME_DATA = {
   ],
   work: [
     {
+      company: "Virtusales Publishing Solutions",
+      link: "https://www.virtusales.com/",
+      badges: ["Hybrid Working"],
+      title: "Software Engineer",
+      logo: VirtusalesLogo,
+      start: "February 2024",
+      end: "Present",
+      description:
+        "Working on a large codebase with a mixture of frameworks including VB.NET, .NET Core, Angular and EF core to deliver features with customer driven requirements and deadlines.",
+    },
+    {
       company: "Unity Technologies",
       link: "https://unity.com/",
       badges: ["Hybrid Working"],
       title: "Software Engineer",
       logo: UnityLogo,
       start: "July 2023",
-      end: "Present",
+      end: "February 2024",
       description:
         "Worked on projects including desktop/web applications and API development which were used throughout the company, to improve and maintain product quality. Using experience gained in front and back-end development including CI/CD best practices. Contributed to open source projects such as Discourse, adding features necessary for internal development.",
       highlights: [
